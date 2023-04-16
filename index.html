@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Age calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;0,800;1,400;1,800&display=swap" rel="stylesheet">
+  </style>
+</head>
+<body>
+  <main>
+    <div class="DMY">
+      <div class="day">
+        <h1>DAY</h1>
+        <input type="number" name="" id="dayInput" placeholder="DD" maxlength="2">
+        <div class="error" id="dayError">This cannot be empty</div>
+      </div>
+      <div class="month">
+        <h1>MONTH</h1> 
+        <input type="number" min="1" max="2" name="" id="monthInput" placeholder="MM" >
+        <div class="error" id="monthError">This cannot be empty</div>
+      </div>
+      <div class="year">
+        <h1>YEAR</h1>
+        <input type="number" name="" id="yearInput" placeholder="YYYY" maxlength="4">
+        <div class="error" id="yearError">This cannot be empty</div>
+      </div>
+    </div>
+    <div class="btn">
+      <button class="button"><img src="/assets/images/icon-arrow.svg" alt=""></button>
+    </div>
+    <div class="results">
+      <div>
+        <div class="years-result">
+          <span class="res-years">38</span> years
+        </div>
+      </div>
+      <div>
+        <div class="months-result">
+          <span class="res-months">3</span> months
+        </div>
+      </div>
+      <div>
+        <div class="days-result">
+          <span class="res-days">26</span> days
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
