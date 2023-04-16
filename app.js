@@ -4,12 +4,12 @@ const inputs = document.querySelectorAll("input");
 const inputsArray = Array.from(inputs);
 const errorsArray = Array.from(errors);
 
-//INPUTS
+
 const dayInput = document.getElementById("dayInput");
 const monthInput = document.getElementById("monthInput");
 const yearInput = document.getElementById("yearInput");
 
-//OUTPUTS
+
 const dayOutput = document.querySelector(".res-days");
 const monthOutput = document.querySelector(".res-months");
 const yearOutput = document.querySelector(".res-years");
@@ -31,7 +31,7 @@ function preventWrongNumbers() {
     } else {
       errorsArray[0].innerHTML = "";
     }
-    checkCorrectValidation(); // call the function to update wrongValidation
+    checkCorrectValidation(); 
   });
 
   monthInput.addEventListener("input", () => {
@@ -44,7 +44,7 @@ function preventWrongNumbers() {
     } else {
       errorsArray[1].innerHTML = "";
     }
-    checkCorrectValidation(); // call the function to update wrongValidation
+    checkCorrectValidation(); 
   });
 
   yearInput.addEventListener("input", () => {
@@ -57,7 +57,7 @@ function preventWrongNumbers() {
     } else {
       errorsArray[2].innerHTML = "";
     }
-    checkCorrectValidation(); // call the function to update wrongValidation
+    checkCorrectValidation(); 
   });
 }
 
@@ -92,7 +92,7 @@ function calculateDifference(){
     year = year - 1;
   }
   if(compareDate > currentDate){
-    alert("wrong")
+    alert("Compared date has to be younger than current date")
     return
   }
 
@@ -106,14 +106,10 @@ function calculateDifference(){
   yearOutput.innerHTML = y;
 }
 
-
-
-
 btn.addEventListener("click", () => {
   if (wrongValidation === true) {
     calculateDifference()
   }else{
-    alert("Pass proper values")
+    alert("Enter valid data")
   }
 });
-
